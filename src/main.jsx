@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { CallBackHook } from "./07-callbacks/CallBackHook";
+import { Father } from "./08-task-memo/Father";
+
 // import { HooksApp } from "./HooksApp";
 // import { CounterApp } from "./01-useState/CounterApp";
 // import { CounterWithCustomHook } from "./01-useState/CounterWithCustomHook";
@@ -12,6 +13,7 @@ import { CallBackHook } from "./07-callbacks/CallBackHook";
 // import { Layout } from "./05-useLayoutEffect/Layout";
 // import { Memorize } from "./06-memos/Memorize";
 // import { MemoHook } from "./06-memos/MemoHook";
+// import { CallBackHook } from "./07-callbacks/CallBackHook";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
@@ -23,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   // <MultipleCustomHook />
   // <Memorize/>
   // <MemoHook />
-  <CallBackHook />
+  // <CallBackHook />
+  <Father />
   // {/* </React.StrictMode> */}
 );
