@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { Father } from "./08-task-memo/Father";
+import "./09-useReducer/intro-reducer";
+
 
 // import { HooksApp } from "./HooksApp";
 // import { CounterApp } from "./01-useState/CounterApp";
@@ -14,6 +15,7 @@ import { Father } from "./08-task-memo/Father";
 // import { Memorize } from "./06-memos/Memorize";
 // import { MemoHook } from "./06-memos/MemoHook";
 // import { CallBackHook } from "./07-callbacks/CallBackHook";
+// import { Father } from "./08-task-memo/Father";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
@@ -26,6 +28,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   // <Memorize/>
   // <MemoHook />
   // <CallBackHook />
-  <Father />
+  // <Father />
   // {/* </React.StrictMode> */}
 );
