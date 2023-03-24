@@ -1,24 +1,26 @@
-import { useReducer } from "react";
+import { useEffect, useReducer } from "react";
 
 import { todoReducer } from "./todoReducer";
 import { TodoList } from "./TodoList";
 import { TodoAdd } from "./TodoAdd";
 
-const initState = [
-  {
-    id: new Date().getTime(),
-    description: "Get the soul of rock",
-    done: false,
-  },
-  {
-    id: new Date().getTime() * 3,
-    description: "Get the soul of power",
-    done: false,
-  },
-];
+const initState = [];
+
+const init = () => {
+  const initValue = localStorage.getItem("todos");
+  if (!initValue) {
+    localStorage.setItem("todos", JSON.stringify([]));
+    return [];
+  }
+  return JSON.parse(initValue);
+};
 
 export const TodoApp = () => {
-  const [todos, dispatchTodo] = useReducer(todoReducer, initState);
+  const [todos, dispatchTodo] = useReducer(todoReducer, initState, init);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos) || []);
+  }, [todos]);
 
   const handleNewTodo = (todo) => {
     const action = {
