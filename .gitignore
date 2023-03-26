@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 
-src/tests/03-examples/__snapshots__/*
+src/tests/03-examples/__snapshots__
