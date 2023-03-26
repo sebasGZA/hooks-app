@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <TodoItem /> Should make match with snapshot 1`] = `
+<div>
+  <li
+    class="list-group-item d-flex justify-content-between"
+  >
+    <span
+      aria-label="span"
+      class="align-self-center "
+    >
+      Rock of the soul
+    </span>
+    <button
+      class="btn btn-danger"
+    >
+      Drop
+    </button>
+  </li>
+</div>
+`;
