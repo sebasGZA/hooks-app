@@ -1,4 +1,4 @@
-body {
+.content {
   padding: 20px;
 }
 
@@ -8,4 +8,8 @@ button {
 
 a {
   margin-right: 10px;
+}
+
+nav {
+  margin-bottom: 10px;
 }
