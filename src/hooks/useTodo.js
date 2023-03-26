@@ -49,7 +49,6 @@ export const useTodo = () => {
   };
 
   return {
-    init,
     todos,
     handleNewTodo,
     handleRemoveTodo,
