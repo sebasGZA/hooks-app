@@ -26,3 +26,4 @@ dist-ssr
 # Jest
 src/tests/03-examples/__snapshots__
 src/tests/09-useReducer/__snapshots__
+src/tests/10-useContext/__snapshots__
